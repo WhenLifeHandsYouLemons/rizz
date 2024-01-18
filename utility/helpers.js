@@ -19,4 +19,4 @@ export function calculate(name, major) {
     }
 
     return score
-} 
+}

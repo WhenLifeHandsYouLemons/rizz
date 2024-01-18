@@ -9,17 +9,25 @@ function Form(props) {
         setName(e.target.value);
     }
 
+    function sendData(e) {
+        props.handleCalculate(name, major);
+    }
+
     return (
-        <div>
+        <div style={{
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+        }}>
             Name:
             <input type="text" value={name} onChange={handleName} />
 
             Major:
             <input type="text" value={major} onChange={(e) => {
-                setName(e.target.value);
+                setMajor(e.target.value);
             }} />
 
-            <button onClick={props.handleCalculate}>
+            <button onClick={sendData}>
                 Calculate
             </button>
         </div>

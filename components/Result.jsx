@@ -1,7 +1,7 @@
 export default function Result(props) {
     return (
         <div>
-            props.score
+            Score: {props.score}
         </div>
     );
 }
