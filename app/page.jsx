@@ -4,8 +4,8 @@
 import { useState } from "react";
 
 // Custom components
-import Form from "@component/Form.jsx";
-import Result from "@component/Result.jsx";
+import Form from "@/components/Form.jsx";
+import Result from "@/components/Result";
 
 import { calculate } from "@/utility/helpers" // I added this function beforehand
 
